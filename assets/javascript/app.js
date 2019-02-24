@@ -6,14 +6,16 @@ var questions = [
     choiceA: "Ottawa",
     choiceB: "Toronto",
     choiceC: "Vancouver",
-    correct: "A"
+    correct: "A",
+    correctChoice: "Ottawa"
   },
   {
     question: "Captial city of Ontario?",
     choiceA: "Ottawa",
     choiceB: "Toronto",
     choiceC: "Vancouver",
-    correct: "B"
+    correct: "B",
+    correctChoice: "Toronto"
   },
   {
     question: "Captial city of British Columbia?",
@@ -21,7 +23,8 @@ var questions = [
     choiceA: "Vancouver",
     choiceB: "Halifax",
     choiceC: "Victoria",
-    correct: "C"
+    correct: "C",
+    correctChoice: "Victoria"
   },
   {
     question: "Captial city of Manitoba?",
@@ -29,14 +32,16 @@ var questions = [
     choiceA: "Winnipeg",
     choiceB: "Halifax",
     choiceC: "Victoria",
-    correct: "A"
+    correct: "A",
+    correctChoice: "Winnipeg"
   },
   {
     question: "Captial city of Nova Scotia?",
     choiceA: "Winnipeg",
     choiceB: "Halifax",
     choiceC: "Victoria",
-    correct: "B"
+    correct: "B",
+    correctChoice: "Halifax"
   }
 ];
 
@@ -123,6 +128,7 @@ function renderCounter() {
 
 // checkAnwer
 
+
 function checkAnswer(answer) {
   if (answer == questions[runningQuestion].correct) {
     // answer is correct
@@ -133,7 +139,7 @@ function checkAnswer(answer) {
     // answer is wrong
     // change progress color to red
     wrongAnswer();
-
+    
   }
   count = 0;
   if (runningQuestion < lastQuestion) {
@@ -165,8 +171,10 @@ function correctAnswer() {
 
 // answer is Wrong
 function wrongAnswer() {
-
+  
   document.getElementById(runningQuestion).style.backgroundColor = "red";
+ $("#rightAnswer").text("Correct answer is: "+ questions[runningQuestion].correctChoice);
+
 }
 
 // score render

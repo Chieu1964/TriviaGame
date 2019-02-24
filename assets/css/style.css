@@ -74,6 +74,18 @@ body{
     right:0;
     top:0;
 }
+
+#rightAnswer {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    padding: 10px;
+}
+
 #question p{
     margin : 0;
     padding : 15px;
