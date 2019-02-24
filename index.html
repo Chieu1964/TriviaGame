@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Trivia Game</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- Adrian code -->
+        <!-- <div class='score-container'> -->
+
+        <div id="start">Click to Start</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <!-- <div id="qImg"></div> -->
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <!-- <div> correct answer </div> -->
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+            <div id="scoreContainer"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+
+
+    </div>
+
+    <!-- start over -->
+    <div id="startOver">Start Over</div>
+    
+
+    <!-- Javascript -->
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
