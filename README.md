@@ -10,3 +10,5 @@
 
 6. Player can click "Start Over" to play again.
 
+Good luck!
+
